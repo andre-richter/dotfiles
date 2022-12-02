@@ -98,6 +98,14 @@ Now log out of your OS and login again. Make a quick sanity check that the runni
 echo $SHELL
 ```
 
+### Switch to SSH remote URL
+
+Now that GPG and SSH should be functional, switch the repo remote:
+
+```bash
+git-dotfiles remote set-url origin git@github.com:andre-richter/dotfiles.git
+```
+
 ## Switching after home-manager has been installed
 
 From now on, whenever something in the home-manager scripts changed, the following command will work:

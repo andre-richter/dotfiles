@@ -28,11 +28,21 @@ in {
 
   #-------------------------------------------------------------------------------------------------
   # emacs
-  #-------------------------------------------------------------------------------------------------#
+  #-------------------------------------------------------------------------------------------------
   programs.emacs = {
     enable = true;
     package = pkgs.emacs-nox;
-    # Much TODO
+    extraConfig = builtins.readFile ./emacs/extra_config.el;
+    extraPackages = epkgs : [
+      epkgs.dts-mode
+      epkgs.json-mode
+      epkgs.lush-theme
+      epkgs.markdown-mode
+      epkgs.multiple-cursors
+      epkgs.nix-mode
+      epkgs.toml-mode
+      epkgs.yaml-mode
+    ];
   };
 
   #-------------------------------------------------------------------------------------------------
