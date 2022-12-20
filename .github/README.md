@@ -4,6 +4,9 @@ Built around `nix` and its `home-manager` using `flakes`.
 
 The git repository is managed according to [this guide], but important steps are outlined below.
 
+This guide **assumes a multi-user installation of nix**. Trying with a single-user installation on
+Ubuntu did not work last time I tried.
+
 [this guide]: https://www.atlassian.com/git/tutorials/dotfiles
 
 ## Prerequisites
