@@ -72,6 +72,9 @@ sudo systemctl restart nix-daemon
 
 ## First install
 
+**!!! Important: Make sure that your username and home path match what is set in linux.nix or mac.nix.
+Otherwise, this can screw up things. Need to find out how to circumvent this !!!**
+
 ```bash
 # macOS
 nix run .config/nix/home-manager switch -- --flake .config/nix/home-manager#mac
