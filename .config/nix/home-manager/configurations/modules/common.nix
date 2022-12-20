@@ -112,6 +112,8 @@ in {
     shellAliases = import ./zsh/shell_aliases.nix;
 
     # FYI: oh-my-zsh modifies bindkeys so that CTRL+left/right moves the cursor to next word.
+    #
+    # https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
     oh-my-zsh = {
       enable = true;
       plugins = [ "gpg-agent" ];
