@@ -1,6 +1,6 @@
 {pkgs, ...}: {
-  home.username = "andre";
-  home.homeDirectory = "/home/andre";
+  home.username = "arichter";
+  home.homeDirectory = "/home/arichter";
 
   imports = [
     ./modules/common.nix
