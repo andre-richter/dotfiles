@@ -108,6 +108,7 @@ in {
     enableCompletion = true;
     enableSyntaxHighlighting = true;
     defaultKeymap = "emacs";
+    envExtra = builtins.readFile ./zsh/env_extra.zsh;
     initExtra = builtins.readFile ./zsh/init_extra.zsh;
     shellAliases = import ./zsh/shell_aliases.nix;
 
